@@ -26,7 +26,7 @@ public class CamelProcessor implements Processor {
 			throw new CamelCustomException("Exchange In Has fault");
 		if(!arg0.getIn().getBody().toString().isEmpty())
 			throw new CamelCustomException("Content Body Empty");
-		System.out.println("File is geting copied...");
+		System.out.println("File is geting copied....Wow");
 		System.out.println("From : "+arg0.getFromEndpoint().getEndpointUri()+"\n ExchangeID : "+arg0.getExchangeId() );
 		throw new CamelCustomException("Basic exception");
 	}
